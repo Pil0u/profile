@@ -1,0 +1,107 @@
+/* Basic general rules */
+
+body {
+	background-color: rgb(47, 49, 54);
+	color: rgb(220, 221, 222);
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+h1, h2 {
+	color: rgb(255, 255, 255);
+	font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Custom rules */
+
+@media (min-width: 720px) {
+	.container {
+		width: 700px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 720px) {
+	.container {
+		width: 500px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 540px) {
+	.container {
+		width: 300px;
+		margin: 0 auto;
+	}
+}
+
+.img-circle img {
+	width: 128px;
+	border-radius: 50%;
+}
+.img-circle img:last-child {
+	display: none;
+}
+.img-circle:hover img:first-child {
+	display: none;
+}
+.img-circle:hover img:last-child {
+	display: inline;
+}
+
+.text-margin {
+	margin: 32px auto;
+}
+
+.card-lighter-grey {
+	background-color: rgb(54, 57, 63);
+	text-align: center;
+	padding: 30px;
+	border-radius: 10px;
+	margin: 16px auto;
+}
+
+.button-text-yellow {
+	background-color: rgba(142, 144, 148, 0.1);
+	color: rgb(255, 216, 54);
+	font-family: 'Righteous', 'Oswald', sans-serif;
+	font-size: 24px;
+	padding: 8px 16px;
+}
+
+.button-text-yellow:hover {
+	background-color: rgb(255, 216, 54);
+	color: rgb(47, 49, 54);
+}
+
+.list-inline {
+	list-style: none;
+	padding: 16px 0px 8px 0px;
+}
+
+.list-inline > li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+.button-fa-yellow {
+	color: rgb(142, 144, 148);
+	font-size: 24px;
+}
+
+.button-fa-yellow:hover {
+	color: rgb(255, 216, 54);
+}
